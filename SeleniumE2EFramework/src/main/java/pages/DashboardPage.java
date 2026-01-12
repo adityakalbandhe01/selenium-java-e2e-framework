@@ -1,10 +1,21 @@
 package pages;
 
+import org.openqa.selenium.*;
+import utils.WaitUtils;
+
 public class DashboardPage {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    WebDriver driver;
+    WaitUtils wait;
 
-	}
+    By pimMenu = By.xpath("//span[text()='PIM']");
 
+    public DashboardPage(WebDriver driver) {
+        this.driver = driver;
+        wait = new WaitUtils(driver);
+    }
+
+    public void goToPIM() {
+        wait.waitForClick(pimMenu);
+    }
 }
