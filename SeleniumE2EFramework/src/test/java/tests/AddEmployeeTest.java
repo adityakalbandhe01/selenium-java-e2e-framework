@@ -22,15 +22,16 @@ public class AddEmployeeTest extends BaseTest {
         LoginPage login = new LoginPage(driver);
         login.login("Admin", "admin123");
         
-
         DashboardPage dashboard = new DashboardPage(driver);
         dashboard.goToPIM();
         
-
         PIMPage pim = new PIMPage(driver);
         pim.addEmployee("Rahul", "Sharma");
     }
 
+    
+    
+    
     @AfterMethod
     
     public void tearDownBrowser() {
