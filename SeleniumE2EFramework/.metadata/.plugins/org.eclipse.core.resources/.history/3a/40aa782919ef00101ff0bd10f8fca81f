@@ -1,0 +1,31 @@
+package tests;
+
+import org.testng.annotations.*;
+import base.BaseTest;
+import pages.*;
+
+public class AddEmployeeTest extends BaseTest {
+
+    @BeforeMethod
+    public void init() {
+        setUp();
+    }
+
+    @Test
+    public void verifyAddEmployee() {
+
+        LoginPage login = new LoginPage(driver);
+        login.login("Admin", "admin123");
+
+        DashboardPage dashboard = new DashboardPage(driver);
+        dashboard.goToPIM();
+
+        PIMPage pim = new PIMPage(driver);
+        pim.addEmployee("Rahul", "Sharma");
+    }
+
+    @AfterMethod
+    public void tearDownBrowser() {
+        tearDown();
+    }
+}

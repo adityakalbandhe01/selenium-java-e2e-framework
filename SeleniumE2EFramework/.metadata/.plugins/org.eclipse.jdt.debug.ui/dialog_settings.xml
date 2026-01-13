@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=SeleniumE2EFramework/\/Users\/adityakalbandhe\/.m2\/repository\/com\/beust\/jcommander\/1.82\/jcommander-1.82.jar=/maven.pomderived=/true=/=/test=/true=/=/maven.groupId=/com.beust=/=/maven.artifactId=/jcommander=/=/maven.version=/1.82=/=/maven.scope=/test=/=/maven.pomderived=/true=/&amp;lt;com.beust.ah(A.class[A&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="555"/>
+			<item key="DIALOG_Y_ORIGIN" value="202"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+</section>
