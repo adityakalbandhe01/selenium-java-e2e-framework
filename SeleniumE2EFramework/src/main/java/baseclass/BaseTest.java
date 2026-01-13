@@ -12,6 +12,8 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+
+        driver.get("https://opensource-demo.orangehrmlive.com/");
     }
 
     public void tearDown() {
