@@ -14,6 +14,9 @@ public class BaseTest {
         driver.manage().window().maximize();
 
         driver.get("https://opensource-demo.orangehrmlive.com/");
+
+    
+    
     }
 
     public void tearDown() {

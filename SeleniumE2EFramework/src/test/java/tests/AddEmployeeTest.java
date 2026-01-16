@@ -27,9 +27,11 @@ public class AddEmployeeTest extends BaseTest {
         login.login("Admin" ,"admin123");
     }
         public void verifyAddEmployee() {
+        	
 
         LoginPage login = new LoginPage(driver);
         login.login("Admin", "admin123");
+        
         
         DashboardPage dashboard = new DashboardPage(driver);
         dashboard.goToPIM();

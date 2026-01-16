@@ -43,9 +43,9 @@ public class AlertsAndCheckboxesTest1 {
         Alert confirmAlert = wait.until(ExpectedConditions.alertIsPresent());
         confirmAlert.dismiss();
 
-        /* =======================
-           PROMPT ALERT
-           ======================= */
+        //=======================
+          // PROMPT ALERT
+       //    ======================= */
         driver.findElement(By.xpath("//button[@onclick='myFunctionPrompt()']")).click();
 
         Alert promptAlert = wait.until(ExpectedConditions.alertIsPresent());
