@@ -21,8 +21,11 @@ public class AddEmployeeTest extends BaseTest {
     public void addEmployeeTest() {
         driver.get("https://opensource-demo.orangehrmlive.com/");
         // rest of OrangeHRM logic
-    
+    //thhhfh
+        //ygugy
 
+        
+        
         LoginPage login = new LoginPage(driver);
         login.login("Admin" ,"admin123");
     }
@@ -31,6 +34,8 @@ public class AddEmployeeTest extends BaseTest {
 
         LoginPage login = new LoginPage(driver);
         login.login("Admin", "admin123");
+        
+        
         
         
         DashboardPage dashboard = new DashboardPage(driver);
