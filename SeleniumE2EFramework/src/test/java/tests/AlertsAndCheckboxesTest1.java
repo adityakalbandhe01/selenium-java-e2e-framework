@@ -44,7 +44,7 @@ public class AlertsAndCheckboxesTest1 {
         confirmAlert.dismiss();
 
         //=======================
-          // PROMPT ALERT
+          // PROMPT ALERT handling
        //    ======================= */
         driver.findElement(By.xpath("//button[@onclick='myFunctionPrompt()']")).click();
 
@@ -53,7 +53,7 @@ public class AlertsAndCheckboxesTest1 {
         promptAlert.accept();
 
         /* =======================
-           CHECKBOXES
+           CHECKBOXES handling
            ======================= */
         List<WebElement> checkboxes =
                 driver.findElements(By.xpath("//input[@type='checkbox' and contains(@id,'day')]"));
