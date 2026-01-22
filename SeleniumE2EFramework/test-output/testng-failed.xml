@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AddEmployeeTest">
+      <class name="tests.MouseActionsTest">
         <methods>
-          <include name="verifyAddEmployee"/>
-          <include name="init"/>
-          <include name="tearDownBrowser"/>
+          <include name="mouseHoverTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.AddEmployeeTest -->
+      </class> <!-- tests.MouseActionsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
