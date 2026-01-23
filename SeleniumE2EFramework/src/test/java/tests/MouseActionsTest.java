@@ -27,6 +27,7 @@ public class MouseActionsTest {
 
     @Test
     public void mouseHoverTest() {
+    	
 
         WebElement mainItem = driver.findElement(By.xpath("//a[text()='Main Item 2']"));
         WebElement subItem = driver.findElement(By.xpath("//a[text()='SUB SUB LIST »']"));
@@ -38,6 +39,7 @@ public class MouseActionsTest {
                .click()
                .build()
                .perform();
+        
     }
 
     @AfterMethod
