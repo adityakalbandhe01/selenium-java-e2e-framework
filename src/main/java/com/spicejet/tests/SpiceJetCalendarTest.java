@@ -1,4 +1,4 @@
-package com.spicejet;
+package com.spicejet.tests;
 
 import java.time.Duration;
 import java.time.LocalDate;
@@ -12,18 +12,30 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class SpiceJetCalendarAutomation {
+import com.sun.tools.javac.util.Assert;
 
-    public static void main(String[] args) {
+public class SpiceJetCalendarTest {
 
+    WebDriver driver;
+    WebDriverWait wait;
+
+    @BeforeMethod
+    public void setUp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
 
-        WebDriver driver = new ChromeDriver(options);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        driver = new ChromeDriver(options);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         driver.get("https://www.spicejet.com/");
+    }
+
+    @Test
+    public void verifyFutureDateSelection() {
 
         // From city
         wait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -55,11 +67,18 @@ public class SpiceJetCalendarAutomation {
                 ExpectedConditions.visibilityOfElementLocated(
                         By.xpath("//div[@data-testid='undefined-month-" + month + "-" + year + "']")));
 
-        // Select exact date
-        monthElement.findElement(
-                By.xpath(".//div[text()='" + day + "']"))
-                .click();
+        // Select date
+        WebElement dateElement = monthElement.findElement(
+                By.xpath(".//div[text()='" + day + "']"));
+        dateElement.click();
 
+        // ✅ Assertion – verify date is selected
+        String selectedDate = dateElement.getAttribute("aria-selected");
+        Assert.assertEquals(selectedDate, "true", "Date was not selected successfully");
+    }
+
+    @AfterMethod
+    public void tearDown() {
         driver.quit();
     }
 }
