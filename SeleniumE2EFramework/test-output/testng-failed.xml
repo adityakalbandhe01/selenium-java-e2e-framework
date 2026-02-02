@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.MouseActionsTest">
+      <class name="tests.AutomationTestStoreE2E">
         <methods>
-          <include name="mouseHoverTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="e2eAutomationTestStore"/>
         </methods>
-      </class> <!-- tests.MouseActionsTest -->
+      </class> <!-- tests.AutomationTestStoreE2E -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

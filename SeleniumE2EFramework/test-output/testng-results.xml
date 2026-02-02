@@ -2,49 +2,22 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-22T23:25:48 IST" name="Default suite" finished-at="2026-01-22T23:26:24 IST" duration-ms="35986">
+  <suite started-at="2026-02-02T16:18:34 IST" name="Default suite" finished-at="2026-02-02T16:18:50 IST" duration-ms="16281">
     <groups>
     </groups>
-    <test started-at="2026-01-22T23:25:48 IST" name="Default test" finished-at="2026-01-22T23:26:24 IST" duration-ms="35986">
-      <class name="tests.MouseActionsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.MouseActionsTest@5158b42f]" started-at="2026-01-22T23:25:48 IST" name="setUp" finished-at="2026-01-22T23:26:23 IST" duration-ms="34544" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="mouseHoverTest()[pri:0, instance:tests.MouseActionsTest@5158b42f]" started-at="2026-01-22T23:26:23 IST" name="mouseHoverTest" finished-at="2026-01-22T23:26:24 IST" duration-ms="1237" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+    <test started-at="2026-02-02T16:18:34 IST" name="Default test" finished-at="2026-02-02T16:18:50 IST" duration-ms="16281">
+      <class name="tests.AutomationTestStoreE2E">
+        <test-method signature="e2eAutomationTestStore()[pri:0, instance:tests.AutomationTestStoreE2E@59309333]" started-at="2026-02-02T16:18:34 IST" name="e2eAutomationTestStore" finished-at="2026-02-02T16:18:50 IST" duration-ms="16233" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element not interactable: https://demoqa.com/menu# has no size and location
-  (Session info: chrome=144.0.7559.60)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.7.3', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e81faa8a2ff2f1da21403a01a19599a7, actions {actions=[org.openqa.selenium.interactions.Sequence@200a26bc]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.60, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: /var/folders/0q/fqg07r1n3dn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52659}, goog:processID: 70078, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52659/devtoo..., se:cdpVersion: 144.0.7559.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e81faa8a2ff2f1da21403a01a19599a7]]>
+              <![CDATA[Home page not loaded expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: https://demoqa.com/menu# has no size and location
-  (Session info: chrome=144.0.7559.60)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.7.3', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e81faa8a2ff2f1da21403a01a19599a7, actions {actions=[org.openqa.selenium.interactions.Sequence@200a26bc]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.60, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: /var/folders/0q/fqg07r1n3dn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52659}, goog:processID: 70078, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52659/devtoo..., se:cdpVersion: 144.0.7559.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e81faa8a2ff2f1da21403a01a19599a7
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
-at tests.MouseActionsTest.mouseHoverTest(MouseActionsTest.java:40)
+              <![CDATA[java.lang.AssertionError: Home page not loaded expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.AutomationTestStoreE2E.e2eAutomationTestStore(AutomationTestStoreE2E.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -73,15 +46,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mouseHoverTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.MouseActionsTest@5158b42f]" started-at="2026-01-22T23:26:24 IST" name="tearDown" finished-at="2026-01-22T23:26:24 IST" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.MouseActionsTest -->
+        </test-method> <!-- e2eAutomationTestStore -->
+      </class> <!-- tests.AutomationTestStoreE2E -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
