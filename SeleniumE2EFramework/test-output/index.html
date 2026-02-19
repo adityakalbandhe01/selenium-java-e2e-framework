@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.AutomationTestStoreE2E" class="method navigator-link" hash-for-method="e2eAutomationTestStore">e2eAutomationTestStore</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.OrangeHRME2E" class="method navigator-link" hash-for-method="orangeHRMFlow">orangeHRMFlow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,19 +121,23 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.AutomationTestStoreE2E</span>
+              <span class="class-name">tests.OrangeHRME2E</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="e2eAutomationTestStore">
-                  </a> <!-- e2eAutomationTestStore -->
-                  <span class="method-name">e2eAutomationTestStore</span>
-                  <div class="stack-trace">java.lang.AssertionError: Home page not loaded expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at tests.AutomationTestStoreE2E.e2eAutomationTestStore(AutomationTestStoreE2E.java:29)
+                  <a name="orangeHRMFlow">
+                  </a> <!-- orangeHRMFlow -->
+                  <span class="method-name">orangeHRMFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;26.3&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.109, chrome: {chromedriverVersion: 145.0.7632.77 (da516187054a..., userDataDir: /var/folders/0q/fqg07r1n3dn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62484}, goog:processID: 39592, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62484/devtoo..., se:cdpVersion: 145.0.7632.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a44affe18c6dbb1627965112a17491d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at tests.OrangeHRME2E.orangeHRMFlow(OrangeHRME2E.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -169,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/0q/fqg07r1n3dnfn0gcjdyqbbmr0000gn/T/testng-eclipse-1735247540/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/0q/fqg07r1n3dnfn0gcjdyqbbmr0000gn/T/testng-eclipse-997166379/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -178,7 +182,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.AutomationTestStoreE2E&quot;/&gt;
+      &lt;class name=&quot;tests.OrangeHRME2E&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -220,14 +224,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'e2eAutomationTestStore')
-data.setCell(0, 2, 'tests.AutomationTestStoreE2E')
-data.setCell(0, 3, 16233);
+data.setCell(0, 1, 'orangeHRMFlow')
+data.setCell(0, 2, 'tests.OrangeHRME2E')
+data.setCell(0, 3, 29286);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -253,11 +257,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.AutomationTestStoreE2E</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.OrangeHRME2E</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">e2eAutomationTestStore</span>
+                <span class="method-name">orangeHRMFlow</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
